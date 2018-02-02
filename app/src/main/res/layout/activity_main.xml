@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heightImage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="monospace"
+            android:text="@string/quote"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/quote"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="map"
+        android:drawableLeft="@drawable/placeholder16"
+        android:drawablePadding="@dimen/padding"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/padding"
+        android:text="@string/address"
+        android:textColor="@color/ud_white"
+        android:textColorLink="@color/ud_white" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="@dimen/padding"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/padding"
+        android:text="@string/phone"
+        android:textColor="@color/ud_white"
+        android:textColorLink="@color/ud_white" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:drawableLeft="@drawable/house2"
+        android:drawablePadding="@dimen/padding"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/padding"
+        android:text="@string/website"
+        android:textColor="@color/ud_white"
+        android:textColorLink="@color/ud_white" />
+
+</LinearLayout>
